@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>星座</title>
+</head>
+
+<body>
+    <table border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>星座</th>
+                <th>日期</th>
+                <th>幸运石</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>白羊座</td>
+                <td>3.21-4.19</td>
+                <td>红宝石</td>
+            </tr>
+            <tr>
+                <td>金牛座</td>
+                <td>4.20-5.20</td>
+                <td>翡翠</td>
+            </tr>
+            <tr>
+                <td>双子座</td>
+                <td>5.21-6.21</td>
+                <td>猫眼石</td>
+            </tr>
+            <tr>
+                <td>巨蟹座</td>
+                <td>6.22-7.22</td>
+                <td>珍珠</td>
+            </tr>
+            <tr>
+                <td>狮子座</td>
+                <td>7.23-8.22</td>
+                <td>琥珀</td>
+            </tr>
+            <tr>
+                <td>处女座</td>
+                <td>8.23-9.22</td>
+                <td>蓝宝石</td>
+            </tr>
+            <tr>
+                <td>天秤座</td>
+                <td>9.23-10.23</td>
+                <td>珊瑚</td>
+            </tr>
+            <tr>
+                <td>天蝎座</td>
+                <td>10.24-11.22</td>
+                <td>碧玉</td>
+            </tr>
+            <tr>
+                <td>射手座</td>
+                <td>11.23-12.21</td>
+                <td>紫水晶</td>
+            </tr>
+            <tr>
+                <td>摩羯座</td>
+                <td>12.22-1.19</td>
+                <td>黑玉</td>
+            </tr>
+            <tr>
+                <td>水瓶座</td>
+                <td>1.20-2.18</td>
+                <td>黑珍珠</td>
+            </tr>
+            <tr>
+                <td>双鱼座</td>
+                <td>2.19-3.20</td>
+                <td>象牙石</td>
+            </tr>
+        </tbody>
+    </table>
+    <br> <h3>了解更多，请注册</h3>
+    <form action="/members/new" method="post">
+        <label>Name </label>
+        <input name="fullname" maxlength="20" type="text"><br>
+
+        <label><input type="radio" name="gender" value="1" >男</label>
+        <label><input type="radio" name="gender" value="0" >女</label> <br>
+
+        <label>birthday</label>
+        <input type="date"><br>
+
+        <label>Email</label>
+        <input name="email" type="email">
+        <label><input type="checkbox" checked>发送最新星座运程到此邮箱</label> <br>
+
+        <label>Phone </label>
+        <input name="phone" type="tel"><br>
+
+        <label>Photo </label>
+        <input name="picture" type="file"><br>
+
+        <label>Favcolor</label>
+        <input name="favcolor" type="color"> <br>
+
+        <button type="submit">提交</button>
+    </form>
+    <br>
+    <h3>已注册请直接登录</h3>
+<form action="/login" method="post">
+    <input name="username" type="text" placeholder="用户名">
+    <input name="password" type="password" placeholder="密码">
+    <button>登录</button><button type="reset">重置</button>
+</form>
+<br>
+</body>
+</html>
+
+
+<h4>小工具试用</h4>
+<form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+    <input type="number" min="0" max="30"> +
+    <input type="number" min="0" max="30"> =
+    <output name="result">30</output>
+</form>
+<br>
